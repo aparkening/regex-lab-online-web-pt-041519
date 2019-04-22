@@ -2,7 +2,7 @@ require 'pry'
 
 # Return true for words starting with a vowel, false for starting with consonant
 def starts_with_a_vowel?(word)
-  word.match(/^[aeiouYAEIOUY]/) ? true : false
+  word.match(/^[aeiouYAEIOUY]\w/) ? true : false
 end
 
 # Return an array with the words starting with 'un' and ending with 'ing'
