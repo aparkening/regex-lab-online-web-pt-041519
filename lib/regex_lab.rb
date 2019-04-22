@@ -21,7 +21,7 @@ end
 
 # Return true for text starting with a capital letter and ending with puncutation
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  return false if text.match(/^[AEIOUY].+\.$/) == nil
+  return false if text.match(/^[AEIOUY].+[\.!?].$/) == nil
   return true
 end
 
