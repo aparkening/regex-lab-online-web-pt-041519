@@ -21,12 +21,10 @@ end
 
 # Return true for text starting with a capital letter and ending with puncutation
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  return false if text.match(/^[AEIOUY].+[\.!?].$/) == nil
-  return true
+  text.match(/^[AEIOUY].+[\.!?].$/) ? true : false
 end
 
 # Return true for valid phone numbers, regardless of formatting
 def valid_phone_number?(phone)
-  return false if phone.match(/\W?\d{3}\W?\d{3}\W?\d{4}$/) == nil
-  return true
+  phone.match(/\W?\d{3}\W?\d{3}\W?\d{4}$/) ? true : false
 end
