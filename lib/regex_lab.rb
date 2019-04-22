@@ -16,7 +16,7 @@ end
 
 # Return an array of words that are five letters long
 def words_five_letters_long(text)
-  text.split().grep(/\b[a-z]{5}$/)
+  text.split().grep(/\b\w{5}$/)
 end
 
 # Return true for text starting with a capital letter and ending with puncutation
